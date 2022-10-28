@@ -9,6 +9,6 @@
 </script>
 
 <main>
-    <Header />
+  <Header />
   <Grid images={images}/>
 </main>

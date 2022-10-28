@@ -64,3 +64,21 @@ body {
 //   outline: 4px auto -webkit-focus-ring-color;
 // }
 
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+
+  &__item {
+    width: 100%;
+
+    & img {
+      width: 100%;
+    }
+  }
+
+}

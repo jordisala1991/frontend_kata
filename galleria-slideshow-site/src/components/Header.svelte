@@ -3,6 +3,6 @@
     <img src="Logo.svg">
   </div>
   <div class="header__button">
-    <button on:click={() => alert('Ding!')}>START SLIDESHOW</button>
+    <button on:click={() => alert('Hola Jordi!')}>START SLIDESHOW</button>
   </div>
 </div>

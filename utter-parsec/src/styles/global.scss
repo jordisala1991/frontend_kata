@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 50rem) {
+    height: 1500px;
+  }
+}

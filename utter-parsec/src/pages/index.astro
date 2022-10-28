@@ -1,0 +1,27 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import GalleryItem from '../components/GalleryItem.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+
+import data from '../data.json';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <main>
+			<div class="gallery">
+				{data.map((item) => (
+					<GalleryItem 
+						title={item.name}
+						author={item.artist.name}
+						image={item.images.gallery}
+					/>
+				))}
+      		</div>
+        </main>
+    </body>
+</html>
